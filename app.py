@@ -8,8 +8,9 @@ def hello_world():
     return "<p>Hello, World!</p>"
 
 @app.route("/teste")
-def hello_world():
+def hello_teste():
     return "<p>Hello, teste!</p>"
 
-port = int(os.environ.get("PORT", 5000))
-app.run(host='0.0.0.0', port=port)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
